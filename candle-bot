@@ -1,0 +1,11 @@
+//This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+
+//©tuga_trader
+//pinescript
+//@version=4
+
+
+study(shottitle"SMA", title = "Simple Moving Average", overlay = true)
+MAperiod = input(21, title = "MA period")
+MA1 = sma(close,MAperiod)
+plot(MA,color = color.purple, linewidth = 4)
